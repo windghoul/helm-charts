@@ -36,6 +36,6 @@ jobs:
 
       - name: Run chart-testing (install)
         run: ct install --config .github/ct-install.yaml --all
-        timeout-minutes: 2
+        timeout-minutes: 5
 
 
