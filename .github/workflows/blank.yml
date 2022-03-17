@@ -16,7 +16,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  test:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -37,5 +37,9 @@ jobs:
       - name: Run chart-testing (install)
         run: ct install --config .github/ct-install.yaml --all
         timeout-minutes: 5
+  release:
+    runs-on: ubuntu-latest
 
+    steps:
+      -
 
