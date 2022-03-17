@@ -1,5 +1,0 @@
-chart-dirs:
-  - charts
-charts:
-  - charts/testchart
-debug: true
