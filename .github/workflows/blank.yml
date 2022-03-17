@@ -35,7 +35,7 @@ jobs:
         uses: helm/kind-action@v1.2.0
 
       - name: Run chart-testing (install)
-        run: ct install --chart-dirs charts/ --charts .
+        run: ct install --config .github/ct-config.yaml
         timeout-minutes: 2
 
 
