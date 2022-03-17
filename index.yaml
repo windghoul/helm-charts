@@ -3,7 +3,17 @@ entries:
   testchart:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T15:49:14.003088+08:00"
+    created: "2022-03-17T14:30:24.268753+08:00"
+    description: A Helm chart for Kubernetes
+    digest: f27a94841e5b52b70c832d821b2ba75deb6a58030fc4e6d69aa7b626a21887f4
+    name: testchart
+    type: application
+    urls:
+    - https://windghoul.github.io/helm-charts/testchart-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-17T14:30:24.268161+08:00"
     description: A Helm chart for Kubernetes
     digest: b3f65ac3d18abb886bceabf879eaabf845f94962c57d3ff5d716d85c64747a59
     name: testchart
@@ -13,7 +23,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-03-16T15:49:14.002714+08:00"
+    created: "2022-03-17T14:30:24.267719+08:00"
     description: A Helm chart for Kubernetes
     digest: 8937832159969ba6b1057a2ed586539760b939f45ec4392d567bef35887d5f33
     name: testchart
@@ -21,4 +31,15 @@ entries:
     urls:
     - https://windghoul.github.io/helm-charts/testchart-0.1.0.tgz
     version: 0.1.0
-generated: "2022-03-16T15:49:14.002046+08:00"
+  testchart1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-03-17T14:30:24.269311+08:00"
+    description: A Helm chart for Kubernetes
+    digest: be105511cea391d6ab56e28118a80225b6f5c7fbd66a3103c742e73db0477ad1
+    name: testchart1
+    type: application
+    urls:
+    - https://windghoul.github.io/helm-charts/testchart1-0.1.3.tgz
+    version: 0.1.3
+generated: "2022-03-17T14:30:24.266047+08:00"
