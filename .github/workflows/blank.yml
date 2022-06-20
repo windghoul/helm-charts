@@ -27,19 +27,6 @@ jobs:
 
       - name: Fetch history
         run: git fetch --prune --unshallow
-
-      - name: Set up chart-testing
-        uses: helm/chart-testing-action@v2.1.0
-
-      - name: Create kind cluster
-        uses: helm/kind-action@v1.2.0
-
-      - name: Run chart-testing (install)
-        run: ct install --config .github/ct-install.yaml --all
-        timeout-minutes: 5
-  release:
-    runs-on: ubuntu-latest
-
-    steps:
-      -
+      - name:
+        run: gh repo clone SphereEx/cloud-uranus-config
 
