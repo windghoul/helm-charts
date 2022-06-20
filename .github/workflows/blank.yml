@@ -31,4 +31,6 @@ jobs:
         run: echo ${{ secrets.ACCESS_TOKEN}} | gh auth login --with-token && gh auth status
       - name: git pull
         run: gh auth setup-git && gh repo clone SphereEx/cloud-uranus-config
+      - name: git show
+        run: ls cloud-uranus-config
 
