@@ -28,5 +28,7 @@ jobs:
       - name: Fetch history
         run: git fetch --prune --unshallow
       - name: git pull
-        run: echo ${{ secrets.ACCESS_TOKEN}} | gh auth login --with-token && gh repo clone SphereEx/cloud-uranus-config
+        run: echo ${{ secrets.ACCESS_TOKEN}} | gh auth login --with-token && gh auth status
+      - name: git pull
+        run: gh repo clone SphereEx/cloud-uranus-config
 
