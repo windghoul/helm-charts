@@ -33,7 +33,7 @@ jobs:
         run: gh auth setup-git && gh repo clone SphereEx/cloud-uranus-config
       - name: apply oauth
         env:
-          SUPER_SECRET: ${{ secrets.SuperSecret }}
+          SUPER_SECRET: ${{ secrets.OAUTH_GITHUB_CLIENT_SECRET }}
         shell: bash
         run: |
           sed -i "s/_oauth_/${SUPER_SECRET}/g"  cloud-uranus-config/tenant/config.yaml
